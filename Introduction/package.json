@@ -8,5 +8,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@angular/compiler": "^20.1.0",
+    "@angular/compiler-cli": "^20.1.0",
+    "@angular/core": "^20.1.0",
+    "@angular/platform-browser": "^20.1.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.4"
+  }
 }
