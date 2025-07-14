@@ -1,4 +1,4 @@
-import 'zone.js';
+// import 'zone.js';
 import 'reflect-metadata';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { Component } from '@angular/core';
