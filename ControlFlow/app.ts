@@ -3,7 +3,9 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <span>Yes, the server is running</span>
+    @if (isServerRunning) {
+      <span>Yes, the server is running</span>
+    }
   `,
 })
 export class App {
