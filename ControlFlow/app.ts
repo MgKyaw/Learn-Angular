@@ -7,5 +7,5 @@ import {Component} from '@angular/core';
   `,
 })
 export class App {
-  // add the boolean property here
+  isServerRunning = true;
 }
