@@ -13,6 +13,6 @@ export class User {
 @Component({
   selector: 'app-root',
   template: ``,
-  imports: [],
+  imports: [User],
 })
 export class App {}
