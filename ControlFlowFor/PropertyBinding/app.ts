@@ -4,7 +4,7 @@ import {Component} from '@angular/core';
   selector: 'app-root',
   styleUrls: ['app.css'],
   template: `
-    <div contentEditable="false"></div>
+    <div [contentEditable]="isEditable"></div>
   `,
 })
 export class App {
