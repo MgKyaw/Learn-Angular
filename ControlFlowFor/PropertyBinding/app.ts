@@ -7,4 +7,6 @@ import {Component} from '@angular/core';
     <div contentEditable="false"></div>
   `,
 })
-export class App {}
+export class App {
+    isEditable = true;
+}
