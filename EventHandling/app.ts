@@ -12,5 +12,7 @@ import {Component} from '@angular/core';
 export class App {
   message = '';
 
-  onMouseOver() {}
+  onMouseOver() {
+    this.message = 'Way to go 🚀';
+  }
 }
