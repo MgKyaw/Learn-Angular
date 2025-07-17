@@ -6,4 +6,6 @@ import {Component, input} from '@angular/core';
     <p>The user's name is</p>
   `,
 })
-export class User {}
+export class User {
+    name = input<string>();
+}
