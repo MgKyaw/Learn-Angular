@@ -4,7 +4,7 @@ import {Child} from './child';
 @Component({
   selector: 'app-root',
   template: `
-    <app-child />
+    <app-child (addItemEvent)="addItem($event)" />
     <p>🐢 all the way down {{ items.length }}</p>
   `,
   imports: [Child],
