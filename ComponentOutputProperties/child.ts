@@ -8,5 +8,7 @@ import {Component, output} from '@angular/core';
   `,
 })
 export class Child {
+  addItemEvent = output<string>();
+  
   addItem() {}
 }
