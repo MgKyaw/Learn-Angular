@@ -9,6 +9,8 @@ import {Comments} from './comments';
       <article></article>
       @defer {
         <comments />
+      } @placeholder {
+        <p>Future comments</p>
       }
     </div>
   `,
