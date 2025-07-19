@@ -28,6 +28,9 @@ import { NgOptimizedImage } from "@angular/common";
     <img ngSrc="www.example.com/image.png" height="600" width="800" priority />
   `,
   imports: [NgOptimizedImage],
+  providers: [
+    provideImgixLoader('https://my.base.url/'),
+  ]
 })
 export class User {
   logoUrl = "/assets/logo.svg";
