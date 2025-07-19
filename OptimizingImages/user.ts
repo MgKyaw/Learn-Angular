@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-user',
@@ -16,7 +17,7 @@ import {Component} from '@angular/core';
       </li>
     </ul>
   `,
-  imports: [],
+  imports: [NgOptimizedImage],
 })
 export class User {
   logoUrl = '/assets/logo.svg';
