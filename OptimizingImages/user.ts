@@ -25,6 +25,7 @@ import { NgOptimizedImage } from "@angular/common";
       //Container div has 'position: "relative"'
       <img ngSrc="www.example.com/image.png" fill />
     </div>
+    <img ngSrc="www.example.com/image.png" height="600" width="800" priority />
   `,
   imports: [NgOptimizedImage],
 })
