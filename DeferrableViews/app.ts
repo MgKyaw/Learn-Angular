@@ -11,6 +11,8 @@ import {Comments} from './comments';
         <comments />
       } @placeholder {
         <p>Future comments</p>
+      } @loading {
+        <p>Loading comments...</p>
       }
     </div>
   `,
