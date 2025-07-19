@@ -21,6 +21,10 @@ import { NgOptimizedImage } from "@angular/common";
         <img [ngSrc]="logoUrl" [alt]="logoAlt" width="32" height="32" />
       </li>
     </ul>
+    <div class="image-container">
+      //Container div has 'position: "relative"'
+      <img ngSrc="www.example.com/image.png" fill />
+    </div>
   `,
   imports: [NgOptimizedImage],
 })
