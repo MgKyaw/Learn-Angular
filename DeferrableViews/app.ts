@@ -7,7 +7,7 @@ import {Comments} from './comments';
     <div>
       <h1>How I feel about Angular</h1>
       <article></article>
-      @defer {
+      @defer (on viewport) {
         <comments />
       } @placeholder {
         <p>Future comments</p>
