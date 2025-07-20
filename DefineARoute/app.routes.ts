@@ -5,6 +5,7 @@ import {User} from './user/user';
 export const routes: Routes = [
   {
     path: '',
+    title: 'App Home Page',
     component: Home,
-  }
+  },
 ];
