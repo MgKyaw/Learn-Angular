@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 
 @Component({
   selector: "app-user",
@@ -10,7 +11,7 @@ import { Component } from "@angular/core";
       <input id="framework" type="text" />
     </label>
   `,
-  imports: [],
+  imports: [FormsModule],
 })
 export class User {
   username = "youngTech";
