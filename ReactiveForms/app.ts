@@ -26,4 +26,10 @@ export class App {
     name: new FormControl(''),
     email: new FormControl(''),
   });
+
+  handleSubmit() {
+  alert(
+    this.profileForm.value.name + ' | ' + this.profileForm.value.email
+    );
+  }
 }
