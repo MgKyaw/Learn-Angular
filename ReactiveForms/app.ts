@@ -4,7 +4,7 @@ import { ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-root',
   template: `
-    <form>
+    <form [formGroup]="profileForm">
       <label>
         Name
         <input type="text" formControlName="name" />
