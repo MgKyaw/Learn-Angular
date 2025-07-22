@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +16,11 @@ import { ReactiveFormsModule } from '@angular/forms';
       <button type="submit">Submit</button>
     </form>
   `,
-  imports: [ReactiveFormsModule],
+    imports: [ReactiveFormsModule, FormControl, FormGroup],
 })
-export class App {}
+export class App {
+  profileForm = new FormGroup({
+    name: new FormControl(''),
+    email: new FormControl(''),
+  });
+}
