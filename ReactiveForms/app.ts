@@ -7,7 +7,7 @@ import { ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
     <h2>Profile Form</h2>
     <p>Name: {{ profileForm.value.name }}</p>
     <p>Email: {{ profileForm.value.email }}</p>
-    <form [formGroup]="profileForm">
+    <form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
       <label>
         Name
         <input type="text" formControlName="name" />
