@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,6 @@ import {Component} from '@angular/core';
       <button type="submit">Submit</button>
     </form>
   `,
-  imports: [],
+  imports: [ReactiveFormsModule],
 })
 export class App {}
