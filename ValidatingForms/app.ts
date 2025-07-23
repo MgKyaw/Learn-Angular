@@ -8,7 +8,7 @@ import {ReactiveFormsModule, Validators } from '@angular/forms';
     <form [formGroup]="profileForm">
       <input type="text" formControlName="name" name="name" />
       <input type="email" formControlName="email" name="email" />
-      <button type="submit">Submit</button>
+      <button type="submit" [disabled]="!profileForm.valid">Submit</button>
     </form>
   `,
   imports: [ReactiveFormsModule],
