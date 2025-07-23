@@ -1,5 +1,7 @@
 import {Injectable} from '@angular/core';
 
+@Injectable({})
+
 export class CarService {
   cars = ['Sunflower GT', 'Flexus Sport', 'Sprout Mach One'];
 
