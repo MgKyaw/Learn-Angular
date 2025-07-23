@@ -15,7 +15,7 @@ import {ReactiveFormsModule, Validators } from '@angular/forms';
 })
 export class App {
   profileForm = new FormGroup({
-    name: new FormControl(''),
-    email: new FormControl(''),
+    name: new FormControl('', Validators.required),
+    email: new FormControl('', [Validators.required, Validators.email]),
   });
 }
