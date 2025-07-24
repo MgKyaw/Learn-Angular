@@ -7,7 +7,7 @@ import {DecimalPipe, DatePipe, CurrencyPipe} from '@angular/common';
     <ul>
       <li>Number with "decimal" {{ num | number:"3.2-2" }}</li>
       <li>Date with "date" {{ birthday | date: 'medium' }}</li>
-      <li>Currency with "currency" {{ cost }}</li>
+      <li>Currency with "currency" {{ cost | currency }}</li>
     </ul>
   `,
   imports: [DecimalPipe, DatePipe, CurrencyPipe],
