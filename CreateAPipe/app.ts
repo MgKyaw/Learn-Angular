@@ -4,9 +4,9 @@ import {ReversePipe} from './reverse.pipe';
 @Component({
   selector: 'app-root',
   template: `
-    Reverse Machine: {{ word }}
+    Reverse Machine: {{ word | reverse }}
   `,
-  imports: [],
+  imports: [ReversePipe],
 })
 export class App {
   word = 'You are a champion';
