@@ -6,6 +6,6 @@ import {CarService} from './car.service';
   template: ``,
 })
 export class App {
-  display = '';
   carService = inject(CarService);
+  display = this.carService.getCars().join(' ⭐️ ');
 }
