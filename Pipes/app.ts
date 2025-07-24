@@ -6,7 +6,7 @@ import { LowerCasePipe } from '@angular/common';
   template: `
     {{ username }}
   `,
-  imports: [],
+  imports: [LowerCasePipe],
 })
 export class App {
   username = 'yOunGTECh';
